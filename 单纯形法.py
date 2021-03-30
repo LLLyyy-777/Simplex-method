@@ -108,7 +108,6 @@ def iteration(A, b, c, M):
         else:
             b_a.append(b[i] / A[i][c_in])
     in_ = b_a.index(min(b_a))
-    print(in_, c_in)
     divisor = A[in_][c_in]
     A[in_] = [x/divisor for x in A[in_]]
     b[in_] = b[in_]/divisor
